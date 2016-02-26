@@ -1,0 +1,14 @@
+#! /bin/bash
+
+#get mail
+echo "syncing gmail"
+mbsync googlemail
+echo "syncing employment"
+mbsync employment
+echo "syncing booking"
+mbsync booking
+echo "syncing teaching"
+mbsync teaching
+
+#scan for viruses
+clamdscan -m --fdpass ~/.mail 

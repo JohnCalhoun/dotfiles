@@ -1,0 +1,51 @@
+set dir=/tmp
+
+"tabs
+set tabstop=5
+set softtabstop=5
+set shiftwidth=5 
+"highligh matching brackets
+set showmatch
+"indent at the same level of the previous line
+"set autoindent
+
+"size of indent"
+
+"single tap in, double tap out
+
+vnoremap vv  <Esc><Esc>
+inoremap ii  <Esc><Esc>
+
+map j gj
+map k gk
+
+setlocal spell spelllang=en_us
+set wrap
+set linebreak
+"set nolist
+
+execute pathogen#infect()
+
+"rainbow parenthese"
+let g:rainbow_active=1
+"integration with tmux
+hi statusline ctermfg=234
+hi statusline ctermbg=241
+
+let g:NeatStatusLine_color_normal='ctermfg=234 ctermbg=50'
+let g:NeatStatusLine_color_insert='ctermfg=234 ctermbg=199'
+let g:NeatStatusLine_color_replace='ctermfg=234 ctermbg=130'
+let g:NeatStatusLine_color_visual='ctermfg=234 ctermbg=148'
+
+let g:NeatStatusLine_color_position='ctermfg=233 ctermbg=241'
+let g:NeatStatusLine_color_line='ctermfg=233 ctermbg=241'
+let g:NeatStatusLine_color_modified='ctermfg=234 ctermbg=50'
+let g:NeatStatusLine_color_filetype='ctermfg=233 ctermbg=241'
+
+syntax enable
+set t_Co=256
+set background=dark
+colorscheme solarized
+
+autocmd BufRead,BufNewFile *.cu set filetype=cpp
+autocmd BufRead,BufNewFile *.otl set noexpandtab

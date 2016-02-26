@@ -1,0 +1,5 @@
+#! /bin/bash
+
+HADOOP_DIR=~/opt/hadoop
+
+HADOOP_DIR/sbin/start-all.sh
