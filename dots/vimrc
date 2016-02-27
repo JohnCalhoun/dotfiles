@@ -48,4 +48,3 @@ set background=dark
 colorscheme solarized
 
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
-autocmd BufRead,BufNewFile *.otl set noexpandtab
