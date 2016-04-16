@@ -12,6 +12,7 @@ alias scan="clamdscan -m --fdpass"
 
 alias backlight="xbacklight -set"
 alias ipython="ipython --profile=john"
+alias ipyNotebook="'ipython' notebook"
 alias R="R -q"
 
 #texted base google search

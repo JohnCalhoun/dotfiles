@@ -62,7 +62,7 @@ for file in $(ls $dir/dots); do
 		mv -fv $home/.$file $olddir
 	fi 
 	if [ -L $home/.$file ];then 
-		\rm $home/.$file
+		rm $home/.$file
 	fi 
 	if [ ! -L $home/.$file ];then 
 		echo "Creating symlink to $file in home directory."

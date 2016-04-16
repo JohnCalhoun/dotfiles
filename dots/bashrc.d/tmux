@@ -3,6 +3,9 @@
 [[ $- != *i* ]]  && return
 if command -v tmux>/dev/null; then
 	if [ -z "$TMUX" ]; then	
-		tmux -f ~/.tmux.conf new -A -s main
+		exec tmux -f ~/.tmux.conf new -A -s main
+		if [ $? -ne 0 ]; then
+			exec tmux -f ~/.tmux.conf new -s main
+		fi
 	fi
 fi
