@@ -6,4 +6,5 @@ net-tools
 wget
 diction
 style 
-hunspell 
+hunspell
+openbox  

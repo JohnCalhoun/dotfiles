@@ -95,7 +95,7 @@ done
 
 #bin scripts 
 echo "creating bin folder"
-ln -s $dir/bin/* $home/bin 
+ln -s $dir/bin $home/bin 
 
 
 
