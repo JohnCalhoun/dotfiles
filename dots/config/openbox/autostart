@@ -16,5 +16,5 @@
 #
 #xfce-mcs-manager &
 
-feh  --bg-scale '/home/john/documents/wallpaper/wallpaper.png' &
+feh  --bg-scale '/home/john/documents/wallpaper/wallpaperBW.png' &
 unclutter &

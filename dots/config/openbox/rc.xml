@@ -46,8 +46,8 @@
 </placement>
 
 <theme>
-  <name>Clearlooks</name>
-  <titleLayout>LMC</titleLayout>
+  <name>BlackWhite</name>
+  <titleLayout>LIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -61,8 +61,8 @@
   <keepBorder>no</keepBorder>
   <animateIconify>yes</animateIconify>
   <font place="ActiveWindow">
-    <name>sans</name>
-    <size>8</size>
+    <name>Hack</name>
+    <size>20</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -70,8 +70,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveWindow">
-    <name>sans</name>
-    <size>8</size>
+    <name>Hack</name>
+    <size>20</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -79,7 +79,7 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuHeader">
-    <name>sans</name>
+    <name>Hack</name>
     <size>9</size>
     <!-- font size in points -->
     <weight>normal</weight>
@@ -88,8 +88,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuItem">
-    <name>sans</name>
-    <size>9</size>
+    <name>Hack</name>
+    <size>15</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -97,8 +97,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>sans</name>
-    <size>9</size>
+    <name>Hack</name>
+    <size>20</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -106,8 +106,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>sans</name>
-    <size>9</size>
+    <name>Hack</name>
+    <size>20</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -312,7 +312,7 @@
   </keybind>
   <keybind key="W-t">
     <action name="Execute">
-      <command>gnome-terminal</command>
+      <command>st -t Terminal</command>
     </action>
   </keybind>
 

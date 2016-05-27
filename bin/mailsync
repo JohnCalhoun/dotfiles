@@ -1,14 +1,15 @@
 #! /bin/bash
 
+export PASS=$(prompt password)
 #get mail
-echo "syncing gmail"
-mbsync googlemail
+echo -n "syncing gmail"
+	mbsync googlemail
 echo "syncing employment"
-mbsync employment
+	mbsync employment
 echo "syncing booking"
-mbsync booking
+	mbsync booking
 echo "syncing teaching"
-mbsync teaching
+	mbsync teaching
 
 #scan for viruses
-clamdscan -m --fdpass ~/.mail 
+#clamdscan -m --fdpass ~/.mail 

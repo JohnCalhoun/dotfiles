@@ -3,7 +3,7 @@ IMAPAccount gmail
 Host imap.gmail.com
 User johnmcalhoun123@gmail.com
 # To store the password in an encrypted file use PassCmd instead of Pass
-PassCmd "lpass show accounts.google.com --password"
+PassCmd "echo $PASS | gpg --passphrase-fd 0 -q --decrypt /home/john/.mail/.pass/gmail.gpg"
 # Use SSL
 SSLType IMAPS
 # The following line should work. If get certificate errors, uncomment the two following lines and read the "Troubleshooting" section.
@@ -70,7 +70,7 @@ Channel sync-googlemail-starred
 IMAPAccount employment
 Host secure157.sgcpanel.com
 User employment@johnmcalhoun.com
-PassCmd "lpass show employment --password"
+PassCmd "echo $PASS | gpg --passphrase-fd 0 -q --decrypt /home/john/.mail/.pass/employment.gpg"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-bundle.crt
 
@@ -100,7 +100,7 @@ channel sync-employment-inbox
 IMAPAccount booking
 Host secure157.sgcpanel.com
 User booking@johnmcalhoun.com
-PassCmd "lpass show booking --password"
+PassCmd "echo $PASS | gpg --passphrase-fd 0 -q --decrypt /home/john/.mail/.pass/booking.gpg"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-bundle.crt
 
@@ -130,7 +130,7 @@ channel sync-booking-inbox
 IMAPAccount teaching
 Host secure157.sgcpanel.com
 User teaching@johnmcalhoun.com
-PassCmd "lpass show teaching@johnmcalhoun.com --password"
+PassCmd "echo $PASS | gpg --passphrase-fd 0 -q --decrypt /home/john/.mail/.pass/teaching.gpg"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-bundle.crt
 

@@ -1,0 +1,53 @@
+dwm-start: Running user dwm...
+dwm: missing fontset: JISX0201.1976-0
+dwm: missing fontset: GB2312.1980-0
+dwm: missing fontset: KSC5601.1987-0
+dwm: missing fontset: JISX0208.1983-0
+dwm: missing fontset: ISO8859-14
+dwm: missing fontset: ISO8859-4
+dwm: missing fontset: ISO8859-3
+[0526/154617:WARNING:ipc_message_attachment_set.cc(57)] MessageAttachmentSet destroyed with unconsumed descriptors: 0/1
+[1,1285454336:15:46:17.743964] Native Client module will be loaded at base address 0x0000585100000000
+2016-May-26 15:46:18.454690: xl::app2::Realtime::run:  xLabs Realtime Service v0.0.0 copyright xLabs Pty. Ltd. (Australia) 2015. All rights reserved.
+2016-May-26 15:46:18.454820: xl::app2::Realtime::run:  This program uses OPEN SOURCE SOFTWARE components: BOOST for C++, OpenCV v2.4, Stasm v4.1, libCURL v7.3, libSVM v3.18 and clapack v3.2.1 open-source libraries.
+2016-May-26 15:46:18.454840: xl::app2::Realtime::run:  Creating application...
+2016-May-26 15:46:18.454850: xl::app2::Application::instance:  Creating new application
+2016-May-26 15:46:18.454870: xl::app2::Realtime::run:  Application config...
+2016-May-26 15:46:18.455790: xl::app2::Application::configure:  Loaded: data/default.config.json
+2016-May-26 15:46:18.455820: xl::app2::Application::configure:  About to read persistent JSON config file: ->|/mnt/persistent/persistent.config.json|<-
+2016-May-26 15:46:18.528370: xl::app2::Application::configure:  Error reading persistent config JSON: ->|/mnt/persistent/persistent.config.json|<-
+2016-May-26 15:46:18.528460: xl::app2::Realtime::run:  Application setup...
+2016-May-26 15:46:18.588600: xl::app2::Realtime::run:  Application start...
+2016-May-26 15:46:18.588670: xl::app2::Application::start:  Application starting threads...
+2016-May-26 15:46:18.600190: xl::app2::Licence::CheckManifest:  The manifest file as a single line: 
+{"background":{"page":"background.html","persistent":true},"browser_action":{"default_icon":{"128":"x_128.png","16":"x_16.png","19":"x_19.png","38":"x_38.png"},"default_popup":"popup.html","default_title":"xLabsHead/Eye/GazeTracker"},"content_scripts":[{"js":["run_at_document_start.js"],"matches":["file://*/*","https://*/*","http://*/*"],"run_at":"document_start"},{"js":["util.js","coord.js","timer.js","errors.js","head.js","mouse.js","learning.js","camera.js","preview.js","calib.js","truth.js","training.js","content_script.js"],"matches":["file://*/*","https://*/*","http://*/*"]}],"content_security_policy":"script-src'self'https://ssl.google-analytics.com;object-src'self'","icons":{"128":"x_128.png","16":"x_16.png","19":"x_19.png","38":"x_38.png"},"incognito":"split","key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqJ1RvqFmimmH26wJk653bxH9AkSPhJS3FIhX3PD+kKTlcFYl6UT6V5q6WFHx58R2Z8L/JzGS0xssiIRiInQDlzitm/FnynnxvUyYo3y36C9VJiCQAGD9Lxn0S9LHwTtQ8iHTslR/zYCU+4woqNRGJwD25EDtAufHZrH10D+eThIPmyD2l1tLhUkKARYstTTRdmjsAOfdX2Vk8J8B46334NJ9KY6Lp93IQHJCJa6sfDBcNz1JPBEghowBJQAz3yUg04QcHIE22Y2RYiQCEIJefX4apZNoJtrEI0+alpA/I8Q6yzF3P0HlVqws2ZTUvBJof40jbvZjROJj7rgBqWuvGQIDAQAB","manifest_version":2,"name":"xLabsHead/Eye/GazeTracker","options_page":"options.html","permissions":["storage","unlimitedStorage","webRequest","https://www.xlabsgaze.com/","https://*/*","http://*/*"],"short_name":"xLabs","update_url":"https://clients2.google.com/service/update2/crx","version":"2.5.6","web_accessible_resources":["no_frame.jpg","options.css","xlabs_white.png","env_bad_back.png","env_bad_dark.png","env_bad_side.png","env_ok_day.png","env_ok_night.png","gaze.jpg","extension_button.png"]}
+2016-May-26 15:46:18.609750: xl::app2::Licence::CheckFileJavaHashCode:  File: /mnt/http/content_script.js has hash: -741136095
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+Vector smash protection is enabled.
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+Vector smash protection is enabled.
+[WARNING:flash/platform/pepper/pep_module.cpp(63)] SANDBOXED
+Vector smash protection is enabled.
+erresc: unknown private set/reset mode 1005
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch pswitch-joined
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 65536
+  Mono:
+  Front Left: Playback 58982 [90%] [off]
+  Front Right: Playback 58982 [90%] [off]
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch pswitch-joined
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 65536
+  Mono:
+  Front Left: Playback 58982 [90%] [off]
+  Front Right: Playback 58982 [90%] [off]
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch pswitch-joined
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 65536
+  Mono:
+  Front Left: Playback 65536 [100%] [off]
+  Front Right: Playback 65536 [100%] [off]
+erresc: unknown private set/reset mode 1005

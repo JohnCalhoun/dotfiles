@@ -1,0 +1,3 @@
+#! /bin/bash
+
+ansiweather -l lubbock,USA -u imperial -a false -s false

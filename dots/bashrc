@@ -15,7 +15,7 @@ fi
 for f in ~/.bashrc.d/*.sh; do
 	. $f
 done
-
+xmod
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
