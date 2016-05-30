@@ -1,0 +1,18 @@
+#! /bin/bash
+
+BATTERY=$(upower -e | grep battery)
+if [ $? -eq 0 ]; then
+	PERCENTAGE=$(upower -i $BATTERY | grep percentage | cut -d: -f2 |tr -d '[[:space:]]')
+	PERCENTAGE=${PERCENTAGE/'%'/' ' }
+	if [ "$PERCENTAGE" -lt '15' ]; then
+		notify-send "BATTERY LOW $PERCENTAGE"
+	fi
+
+	if [ "$PERCENTAGE" -gt '95' ]; then
+		notify-send "BATTERY CHARGED $PERCENTAGE"
+	fi
+
+
+else
+	echo FAILED
+fi

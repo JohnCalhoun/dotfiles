@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 #include "push.c"
+#include "upbar.c"
 #include <X11/XF86keysym.h>
 
 /* appearance */
@@ -74,6 +75,8 @@ static Key keys[] = {
 	{ MODKEY|MODSHIFT,              XK_t,      spawn,          {.v = termcmd } },
 	{ MODKEY|MODSHIFT,              XK_c,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_v,      togglebar,      {0} },
+	{ MODKEY,                       XK_u,      upbar,          {0} },
+	{ MODKEY,                       XK_d,      downbar,        {0} },
 	{ MODKEY,                       XK_Left,   focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_Right,  focusstack,     {.i = -1 } },
 	{ MODKEY|MODSHIFT,              XK_Up,     incnmaster,     {.i = +1 } },

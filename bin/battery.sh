@@ -1,4 +1,4 @@
-# vim:syntax=sh
+#! /bin/bash
 if upower -e &>/dev/null; then
 	BATTERY=$(upower -e | grep battery)
 	if [ $? -eq 0 ]; then

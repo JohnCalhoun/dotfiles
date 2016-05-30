@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/john/projects/akis/demos/segmentation/build'
 let g:netrw_dirhist_2='/home/john/projects/akis/demos/eye'
 let g:netrw_dirhist_3='/home/john/projects/akis/demos/2gray/build'
 let g:netrw_dirhist_4='/home/john/projects/akis/demos/orientation'
 let g:netrw_dirhist_5='/home/john/Dropbox/dotfiles/dots/dwm/patches'
+let g:netrw_dirhist_6='/usr/src/dwm-user-6.0-11.fc22'
+let g:netrw_dirhist_7='/home/john/Dropbox/dotfiles/dots/dwm/patches'
