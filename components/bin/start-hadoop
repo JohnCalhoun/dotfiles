@@ -1,0 +1,12 @@
+#! /bin/bash
+
+HADOOP_DIR=~/opt/hadoop
+
+echo "==================staring machines"
+for machine in hadoop1 hadoop2 hadoop3;do
+	VBoxHeadless -startvm $machine & 
+done
+echo "waiting"
+sleep 100
+
+echo "=================starting hadoop"

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+ansiweather -l Murphy,TX -u imperial -a false -s false

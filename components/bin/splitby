@@ -1,0 +1,3 @@
+#! /bin/bash
+
+awk '/#START/{x="part-"++i;}{print > x;}' $@

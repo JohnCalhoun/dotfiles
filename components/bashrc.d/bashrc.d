@@ -1,0 +1,1 @@
+/home/john/Dropbox/dotfiles/components/bashrc.d

@@ -1,0 +1,18 @@
+#! /bin/bash
+
+ROOT=~/opt/gcc4
+VERSION=21
+
+sudo mkdir $ROOT
+
+sudo dnf install gcc gcc-c++ --installroot=$ROOT --releasever=$VERSION --nogpgcheck
+
+sudo ln -s $ROOT/usr/bin/gcc /usr/local/cuda/bin/gcc
+sudo ln -s $ROOT/usr/bin/g++ /usr/local/cuda/bin/g++
+
+#sudo dnf remove gcc --installroot=/opt/gcc4-hack --releasever=21 --nogpgcheck
+#sudo rm -r /opt/gcc4-hack/
+#sudo rm /usr/local/cuda/bin/gcc
+#sudo rm /usr/local/cuda/bin/g++
+
+
