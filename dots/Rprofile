@@ -1,8 +1,0 @@
-options(editor="/usr/bin/vim")
-library("colorout")
-
-local({
-  r <- getOption("repos")
-  r["CRAN"] <- "https://cran.revolutionanalytics.com/"
-  options(repos = r)
-})

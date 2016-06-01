@@ -1,6 +1,0 @@
-#!/bin/bash
-echo -n "$*: " >/dev/stderr
-stty -echo
-read answer
-stty echo
-echo $answer

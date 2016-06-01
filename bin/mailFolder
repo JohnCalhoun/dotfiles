@@ -1,6 +1,0 @@
-#! /bin/bash
-
-for var in "$@"
-do
-	mkdir -p ~/.mail/gmail/$var/{cur,new,tmp}
-done

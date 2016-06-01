@@ -1,3 +1,0 @@
-#! /bin/bash 
-
-xclip -o | xargs -n1 wget

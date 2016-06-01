@@ -1,5 +1,0 @@
-#! /bin/bash
-
-DIR=~/bin/words.d
-
-$DIR/theasaurus.py  $1 | hxnormalize | elinks 

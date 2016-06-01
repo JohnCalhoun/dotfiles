@@ -7,4 +7,7 @@ wget
 diction
 style 
 hunspell
-openbox  
+dwm
+dwm-user 
+ruby
+gems 
