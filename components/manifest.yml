@@ -77,5 +77,6 @@ symlinks:
   - src: tmux.conf
     dst: .tmux.conf
     package: [tmux]
-
-
+#fonts
+  - src: fonts
+    dst: .fonts

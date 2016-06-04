@@ -45,6 +45,13 @@ olddir=$( cd $olddir; pwd)
 
 ###########installs
 
+#make directories
+for new in $( cat $dir/configs/directories.text);do
+	echo "making directory $new in $home"
+	mkdir -p $home/$new
+done
+
+#packages
 if yum --help &>/dev/null; then
 	REPO=yum
 else
@@ -56,21 +63,14 @@ for package in $(cat $dir/configs/dnf_packages.text); do
 	sudo $REPO install $package 
 done
 
-cd $dir && curate -v 
-
 #other scripts 
 cd $dir
 for script in $(ls scripts | grep install); do
 	. ./scripts/$script $dir $home
 done
 
-#make directories
-for new in $( cat $dir/configs/directories.text);do
-	echo "making directory $new in $home"
-	mkdir -p $home/$new
-done
-
-
+#dotfiles
+cd $dir && curate -v 
 
 
 
