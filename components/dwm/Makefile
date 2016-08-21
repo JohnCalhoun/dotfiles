@@ -2,8 +2,9 @@
 # See LICENSE file for copyright and license details.
 
 include config.mk
-VERSION=$(shell cat ./version)
-SRC_DIR=/usr/src/dwm-user-${VERSION}
+VERSION=$(shell ls /usr/src | grep dwm | cut -d "-" -f3)
+RELEASE=$(shell ls /usr/src | grep dwm | cut -d "-" -f4)
+SRC_DIR=/usr/src/dwm-user-${VERSION}-${RELEASE}
 SRC = dwm.c
 OBJ = ${SRC:.c=.o}
 

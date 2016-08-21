@@ -16,14 +16,8 @@ symlinks:
   - src: bashrc
     dst: .bashrc
 
-  - src: bashrc.d
-    dst: .bashrc.d 
-
   - src: bash_logout
     dst: .bash_logout
-
-  - src: bashrc.d 
-    dst: .bashrc.d 
 
   - src: dircolors-solarized
     dst: .dircolors-solarized 

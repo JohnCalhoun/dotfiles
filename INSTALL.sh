@@ -60,7 +60,7 @@ fi
 
 sudo $REPO update 
 for package in $(cat $dir/configs/dnf_packages.text); do
-	sudo $REPO install $package 
+	sudo $REPO install $package -y
 done
 
 #other scripts 
