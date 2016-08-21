@@ -14,13 +14,7 @@ alias backlight="xbacklight -set"
 alias ipython="ipython --profile=john"
 alias ipyNotebook="'ipython' notebook"
 alias R="R -q"
+alias v="vim"
 
 #texted base google search
 alias google='sr google -t'
-
-alias mutt-gmail='MUTT_LOCAL_CONFIG=gmail mutt'
-alias mutt-employment='MUTT_LOCAL_CONFIG=employment mutt'
-alias mutt-booking='MUTT_LOCAL_CONFIG=booking mutt'
-alias mutt-teaching='MUTT_LOCAL_CONFIG=teaching mutt'
-
-alias wp="wp-remote.sh"

@@ -379,7 +379,7 @@ bl ()
 #                 For bookmarks used by 'cd' the access time is recorded.
 #    PARAMETERS:  [bookmark]
 #-------------------------------------------------------------------------------
-g ()
+gg ()
 {
   case $# in
     0)  cd "$HOME"
@@ -598,7 +598,7 @@ bookmarks ()
                                -t            show time stamps
                                regex         list bookmarks matching regex
   bm bookmark              : resolve a bookmark (tab compl.)
-  g  [bookmark]            : go to a bookmark or named directory (tab compl.)
+  gg  [bookmark]            : go to a bookmark or named directory (tab compl.)
                                <no option>   go to the home directory
                                bookmark      go to the bookmarked directory
   p  [bookmark]            : push bookmark / directory onto dir stack (tab compl.)
@@ -751,7 +751,7 @@ _bookmarks_support mc_hotlist                   # renew the MC directory hotlist
 
 complete -F _bookmarks_completion bl            # tab completion command bm
 complete -F _bookmarks_completion bm            # tab completion command bm
-complete -F _bookmarks_completion g             # tab completion command g
+complete -F _bookmarks_completion gg             # tab completion command g
 complete -F _bookmarks_completion p             # tab completion command p
 complete -F _bookmarks_completion r             # tab completion command r
 

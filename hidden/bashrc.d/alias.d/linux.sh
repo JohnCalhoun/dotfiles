@@ -25,4 +25,4 @@ alias histg="history | grep"
 
 alias shutdown="shutdown -h now"
 alias restart="shutdown -r now"
-
+alias g='git'

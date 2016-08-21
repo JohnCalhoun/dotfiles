@@ -1,0 +1,132 @@
+set dir=/tmp
+set nocompatible
+set modelines=0
+set relativenumber
+set undofile
+let mapleader=','
+set incsearch
+set showmatch
+set hlsearch
+set gdefault
+
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+nnoremap <leader>, ^
+vnoremap <leader>, ^
+nnoremap <leader>. $
+vnoremap <leader>. $
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+nnoremap	<leader>R q
+inoremap  <leader>R q
+
+nnoremap q <nop>
+vnoremap q <nop>
+
+nnoremap ; :
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4 
+set expandtab 
+
+"highligh matching brackets
+set showmatch
+set backspace=indent,eol,start
+set autoindent
+
+"single tap in, double tap out
+vnoremap vv  <Esc><Esc>
+inoremap ii  <Esc><Esc>
+
+map j gj
+map k gk
+
+set nospell
+set wrap
+set linebreak
+
+execute pathogen#infect()
+
+"rainbow parenthese"
+let g:rainbow_active=1
+"integration with tmux
+hi statusline ctermfg=234
+hi statusline ctermbg=241
+
+let g:NeatStatusLine_color_normal='ctermfg=234 ctermbg=50'
+let g:NeatStatusLine_color_insert='ctermfg=234 ctermbg=199'
+let g:NeatStatusLine_color_replace='ctermfg=234 ctermbg=130'
+let g:NeatStatusLine_color_visual='ctermfg=234 ctermbg=148'
+
+let g:NeatStatusLine_color_position='ctermfg=233 ctermbg=241'
+let g:NeatStatusLine_color_line='ctermfg=233 ctermbg=241'
+let g:NeatStatusLine_color_modified='ctermfg=234 ctermbg=50'
+let g:NeatStatusLine_color_filetype='ctermfg=233 ctermbg=241'
+
+syntax enable
+set t_Co=256
+set background=dark
+colorscheme solarized
+
+autocmd BufRead,BufNewFile *.cu set filetype=cpp
+autocmd BufRead,BufNewFile *.pig set filetype=pig syntax=pig
+autocmd FileType make setlocal noexpandtab
+
+
+let g:syntastic_cpp_compiler_options="-std=c++11"
+
+function Focus_on()
+    colorscheme seoul256
+    Goyo
+    Limelight
+endfunction
+
+function Focus_off()
+    Goyo!
+    Limelight!
+    set background=dark
+    colorscheme solarized 
+endfunction
+
+let g:Focus_is_on=0
+
+function Focus_toggle()
+    if g:Focus_is_on
+        call Focus_off()
+        let g:Focus_is_on=0
+    else
+        call Focus_on()
+        let g:Focus_is_on=1
+    endif
+endfunction
+
+nnoremap <leader>f :call Focus_toggle()<cr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
