@@ -40,39 +40,12 @@ dir=$(cd $dir; pwd)
 
 home=$(cd $home; pwd)
 
-olddir=$home/.dotfiles_old             # old dotfiles backup directory
-olddir=$( cd $olddir; pwd)
-
 ###########installs
-
-#make directories
-for new in $( cat $dir/configs/directories.text);do
-	echo "making directory $new in $home"
-	mkdir -p $home/$new
-done
-
-#packages
-if yum --help &>/dev/null; then
-	REPO=yum
-else
-	REPO=dnf
-fi
-
-sudo $REPO update 
-for package in $(cat $dir/configs/dnf_packages.text); do
-	sudo $REPO install $package 
-done
-
 #other scripts 
 cd $dir
 for script in $(ls scripts | grep install); do
-	. ./scripts/$script $dir $home
+	. ./scripts/$script $dir $home | tee $dir/logs/$script.log
 done
-
-#dotfiles
-cd $dir && curate -v 
-
-
 
 
 

@@ -1,0 +1,21 @@
+#! /bin/bash
+
+dir=$(cd $1; pwd)
+home=$(cd $2; pwd)
+PATH=$(cd $dir/visible; pwd)
+
+for dot in $PATH/*; do
+	file_name="$(echo $dot | /usr/bin/rev | /usr/bin/cut -d '/' -f1 | /usr/bin/rev)"
+	file=$home/$file_name	
+	line="/bin/ln -s $dot $file"
+	if [ -L $file ]; then
+		echo $file' exists, deleting'
+		/bin/rm $file
+	fi		
+	echo "$line"
+	eval $line
+done
+
+
+
+	

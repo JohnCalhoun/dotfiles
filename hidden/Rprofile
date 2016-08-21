@@ -1,6 +1,7 @@
 options(editor="/usr/bin/vim")
 library("colorout")
 
+options(scipen=999)
 local({
   r <- getOption("repos")
   r["CRAN"] <- "https://cran.revolutionanalytics.com/"
