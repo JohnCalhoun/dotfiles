@@ -1,2 +1,4 @@
 *.logs
 *.un~
+ssh.sh
+lein
