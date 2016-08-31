@@ -12,6 +12,11 @@ for dot in $PATH/*; do
 		echo $file' exists, deleting'
 		/bin/rm $file
 	fi	
-	echo "$line"
+    if [ -a $file ]; then
+        echo $file' exists, moving'
+        /bin/mkdir -p $home/.dotfile-old
+        /bin/mv $file $home/.dotfile-old
+    fi
+    echo "$line"
 	eval $line
 done

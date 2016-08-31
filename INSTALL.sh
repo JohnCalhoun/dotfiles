@@ -38,6 +38,8 @@ fi
 dir=$(dirname $0)                   # dotfiles directory
 dir=$(cd $dir; pwd)
 
+mkdir -p $dir/logs
+
 home=$(cd $home; pwd)
 
 ###########installs
