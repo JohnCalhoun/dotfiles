@@ -36,3 +36,7 @@ up(){
 #back up a file
 bu () { cp $1 ~/.backup/`basename $1`-`date +%Y%m%d%H%M`.backup ; }
 
+pyclean () {
+    find . -type f -name "*.py[co]" -delete
+    find . -type d -name "__pycache__" -delete
+}

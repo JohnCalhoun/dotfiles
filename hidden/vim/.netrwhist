@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/john/tmp/dotfiles/visible'
 let g:netrw_dirhist_2='/home/john/tmp/dotfiles/scripts'
 let g:netrw_dirhist_3='/home/john/projects/BakeHard_theme/style/materialize/materialize'
+let g:netrw_dirhist_4='/home/john/projects/BakeHard_theme/js/cljs'
+let g:netrw_dirhist_5='/home/john/projects/BakeHard_theme/js/test'
+let g:netrw_dirhist_6='/home/john/tmp/closure-library/closure/bin/build'

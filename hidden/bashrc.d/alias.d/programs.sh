@@ -18,3 +18,5 @@ alias v="vim"
 
 #texted base google search
 alias google='sr google -t'
+
+alias webserver='python -m SimpleHTTPServer'

@@ -1,8 +1,10 @@
-set dir=/tmp
+set dir=~/tmp/vim
+set undodir=~/tmp/vim//
+set undofile
+
 set nocompatible
 set modelines=0
 set relativenumber
-set undofile
 let mapleader=','
 set incsearch
 set showmatch
@@ -81,6 +83,7 @@ colorscheme solarized
 
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
 autocmd BufRead,BufNewFile *.pig set filetype=pig syntax=pig
+autocmd BufRead,BufNewFile *.soy set filetype=soy syntax=soy
 autocmd FileType make setlocal noexpandtab
 
 
