@@ -83,9 +83,12 @@ colorscheme solarized
 
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
 autocmd BufRead,BufNewFile *.pig set filetype=pig syntax=pig
-autocmd BufRead,BufNewFile *.soy set filetype=soy syntax=soy
+autocmd BufRead,BufNewFile *.soy set filetype=soy syntax=soy.html
 autocmd FileType make setlocal noexpandtab
 
+autocmd FileType scss  setlocal tabstop=2
+autocmd FileType scss  setlocal shiftwidth=2
+autocmd FileType scss  setlocal softtabstop=2
 
 let g:syntastic_cpp_compiler_options="-std=c++11"
 
@@ -116,8 +119,7 @@ endfunction
 
 nnoremap <leader>f :call Focus_toggle()<cr>
 
-
-
+set pastetoggle=<leader>p 
 
 
 

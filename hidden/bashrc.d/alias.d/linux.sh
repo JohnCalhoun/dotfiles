@@ -2,6 +2,7 @@
 
 shopt -s checkwinsize
 alias rm="rm --preserve-root"
+alias rmr="command rm -r --preserve-root"
 alias sudo="sudo -E"
 alias rudo="sudo -E !!"
 alias c="clear"
@@ -26,3 +27,4 @@ alias histg="history | grep"
 alias shutdown="shutdown -h now"
 alias restart="shutdown -r now"
 alias g='git'
+alias psg='ps aux | grep'

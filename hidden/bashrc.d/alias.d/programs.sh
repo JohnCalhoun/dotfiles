@@ -15,6 +15,7 @@ alias ipython="ipython --profile=john"
 alias ipyNotebook="'ipython' notebook"
 alias R="R -q"
 alias v="vim"
+alias npi='npm install --save-dev'
 
 #texted base google search
 alias google='sr google -t'
