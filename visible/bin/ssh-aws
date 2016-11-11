@@ -1,5 +1,4 @@
 #! /bin/bash 
 
-ssh -i ~/.ssh/MainKey.pem john@ec2-52-37-119-107.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/my-ec2-key.pem ec2-user@$1
 
-#ssh -i ~/.ssh/MainKey.pem ec2-user@ec2-52-37-119-107.us-west-2.compute.amazonaws.com
