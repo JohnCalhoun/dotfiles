@@ -3,7 +3,9 @@ set undodir=~/tmp/vim//
 set undofile
 
 set nocompatible
-set modelines=0
+set nofoldenable
+set modeline
+set modelines=5
 set relativenumber
 let mapleader=','
 set incsearch
@@ -84,6 +86,7 @@ colorscheme solarized
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
 autocmd BufRead,BufNewFile *.pig set filetype=pig syntax=pig
 autocmd BufRead,BufNewFile *.soy set filetype=soy syntax=soy.html
+autocmd BufRead,BufNewFile *.hb set filetype=handlebars syntax=handlebars.html
 autocmd FileType make setlocal noexpandtab
 
 autocmd FileType scss  setlocal tabstop=2

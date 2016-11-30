@@ -6,7 +6,7 @@ alias todo="~/bin/todo.sh"
 alias cd="tp"
 alias cdn="cd -n"
 alias rm="brash"
-alias delete="'rm'"
+alias del="'rm'"
 alias dropbox="dropbox.py"
 alias scan="clamdscan -m --fdpass"
 

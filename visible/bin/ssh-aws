@@ -1,4 +1,4 @@
 #! /bin/bash 
 
-ssh -i ~/.ssh/main-key.pem ec2-user@$1
+ssh -i ~/.ssh/ec2-dev.pem ec2-user@$1
 

@@ -3,3 +3,4 @@ logs
 *.un~
 ssh.sh
 lein
+hidden/vim/.netrwhist
