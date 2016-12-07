@@ -1,5 +1,0 @@
-#! /bin/bash
-echo '$latex'
-TEXT="$(splitbetween %$1 %END *tex)"
-echo "$TEXT" 
-echo '&s=0$' 

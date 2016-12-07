@@ -1,6 +1,0 @@
-#! /bin/bash
-echo '[code language=r]'
-runR 2Dexpansion.R > output.R 
-splitbetween \#$1 \#END output.R > section.R 
-cat section.R
-echo '[/code]' 
