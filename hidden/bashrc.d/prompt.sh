@@ -1,5 +1,4 @@
 # vim:syntax=sh
-source ~/.bashrc.d/git-prompt.sh
 source ~/.bashrc.d/colors.sh
 
 __prompt_command ()
@@ -19,7 +18,7 @@ __prompt_command ()
 	#close bracket
 		PS1+="$PROMPT_PRIMARY]$PROMPT_RESET"
 	#git status
-		PS1+="$(__git_ps1)"
+        PS1+="$(~/.bashrc.d/git.sh)"
 	#col width
 		if [ $(tput cols) -lt 45 ]; then
 			PS1+="\n"
