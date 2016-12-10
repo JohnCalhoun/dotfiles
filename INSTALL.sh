@@ -45,6 +45,8 @@ home=$(cd $home; pwd)
 ###########installs
 #other scripts 
 cd $dir
+mkdir -p $home/tmp/vim
+
 for script in $(ls scripts | grep install); do
 	. ./scripts/$script $dir $home | tee $dir/logs/$script.log
 done
