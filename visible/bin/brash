@@ -48,7 +48,7 @@ echo "  restore requires the full path to where you want the restored file."
 # and a place to store a log file.
 MkTrashCan()
 {
-mkdir --parents ~/.trash/can
+mkdir -p ~/.trash/can
 mkdir ~/.trash/log
 exit 0
 }

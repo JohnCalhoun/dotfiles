@@ -1,6 +1,7 @@
 # .bashrc
 
 
+export CLICOLOR=1
 if [[ $- != *i* ]]; then return;fi
 
 # Source global definitions
@@ -18,8 +19,6 @@ done
 xmod
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
-
-eval "$(dircolors ~/.dircolors-solarized)"
 
 # User specific aliases and functions
 # found in script in ~/.bashrc.d
