@@ -76,7 +76,7 @@ do
         listfiles=$(find $f -print) # get the list of files in the dir
         for file in $listfiles
         do
-            sourcefile=$(readlink -f $file)
+            sourcefile=$(readlink $file)
             logmv="$sourcefile >> trash"
             printf "%s \t %s\n" $logmv $timestamp >> ~/.trash/log/trashlog
         done
@@ -85,7 +85,7 @@ do
     else               # process individual files    
         SAVEIFS=$IFS
         IFS=$(echo -en "\n\b")
-        sourcefile=`readlink -f $f`
+        sourcefile=`readlink $f`
         logmv="$sourcefile >> trash"
         printf "%s \t %s\n" $logmv $timestamp >> ~/.trash/log/trashlog
         mv -f $f ~/.trash/can
