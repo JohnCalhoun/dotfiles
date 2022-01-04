@@ -35,3 +35,4 @@ alias tns='tmux new-session -d -t'
 alias tkill='tmux kill-session -t'
 
 alias npr="npm run"
+alias vim="nvim"

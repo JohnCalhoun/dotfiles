@@ -21,3 +21,6 @@ alias npi='npm install --save-dev'
 alias google='sr google -t'
 
 alias webserver='python -m SimpleHTTPServer'
+alias tf='terraform'
+
+alias snowsql='/Applications/SnowSQL.app/Contents/MacOS/snowsql'
