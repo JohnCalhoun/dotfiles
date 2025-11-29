@@ -1,3 +1,4 @@
+set viminfo='500,<1000,s100,h
 set dir=~/tmp/vim
 set undodir=~/tmp/vim//
 set undofile
@@ -109,6 +110,10 @@ autocmd FileType yaml  setlocal tabstop=2
 autocmd FileType yaml  setlocal shiftwidth=2
 autocmd FileType yaml  setlocal softtabstop=2
 
+autocmd FileType tf setlocal tabstop=2
+autocmd FileType tf setlocal shiftwidth=2
+autocmd FileType tf setlocal softtabstop=2
+
 autocmd FileType go setlocal noexpandtab
 let g:syntastic_cpp_compiler_options="-std=c++11"
 
@@ -180,3 +185,9 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ld :CocList diagnostics<CR>
 autocmd BufNewFile,BufRead *.pkr.hcl set filetype=hcl
 
+
+call plug#begin()
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
+
+call plug#end()
